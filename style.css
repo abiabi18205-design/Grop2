@@ -1,0 +1,201 @@
+/* Root Variables for Light/Dark mode */
+:root {
+    --primary-color: #ff6700;
+    --secondary-color: #1f1f1f;
+    --accent-color: #ffae42;
+    --neutral-light: #f8f9fa;
+    --neutral-dark: #121212;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--neutral-light);
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: var(--neutral-dark);
+    color: #f1f1f1;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('./images/file_00000000a024720798651a308c0a067a.png') no-repeat center center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+
+
+
+
+
+   /* MODERN FITNESS CARD STYLE */
+
+.card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #1a1a1a; /* Dark smooth background */
+    color: #fff;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* Image Style */
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+    border-bottom: 4px solid #ff6700; /* Fitness yellow accent */
+}
+
+/* Card Body Text */
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #bbbbbb;
+    font-size: 0.95rem;
+    margin-top: 6px;
+}
+
+/* Smooth Edge Shadows */
+.hover-card {
+    border-radius: 18px;
+}
+
+/* Subtle Glow on Hover */
+.card:hover img {
+    filter: brightness(1.08);
+}
+
+
+    
+
+
+
+
+.hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Buttons */
+.btn-warning {
+    background-color: var(--primary-color);
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: var(--accent-color);
+}
+
+
+
+
+.contact-section .form-control {
+    background: #f9f8f8;
+    border: none;
+    color: #080808;
+}
+
+.contact-section .form-control:focus {
+    box-shadow: 0 0 0 2px #ffcc00;
+    background: #999797;
+}
+
+.contact-section textarea {
+    resize: none;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Navbar */
+.navbar .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6700; /* yellow on hover */
+}
+
+
+/* 2nd */
+
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.chatbox {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  background-color: #fff;
+}
+
+.chat-header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #e9ecef;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  max-width: 80%;
+  clear: both;
+}
+
+.user-msg {
+  background-color: #0d6efd;
+  color: white;
+  float: right;
+}
+
+.bot-msg {
+  background-color: #6c757d;
+  color: white;
+  float: left;
+}
+
+.chat-input {
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+
+
+
+
