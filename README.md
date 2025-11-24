@@ -34,14 +34,23 @@ The **AI Fitness Coach** is an interactive web application designed to help user
 
 AI-Fitness-Coach/
 │
+
 ├── index.html  # Main HTML file
+
 ├── login.html  
+
 ├── about.html
+
 ├── index.html # Main HTML file
+
 ├── style.css # Styles for all components
+
 ├── script.js # JavaScript for functionality
+
 ├── assets/ # Images, icons, fonts
+
 ├── README.md # Project documentation
+
 └── ...
 
 
@@ -71,7 +80,7 @@ AI-Fitness-Coach/
 ## How to Run Locally
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/AI-Fitness-Coach.git
+   git clone https://github.com/abiabi18205-design/Grop2.git
 
 
 ## Credits
