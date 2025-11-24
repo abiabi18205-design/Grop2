@@ -1,0 +1,109 @@
+ /* === 1. GLOBAL STYLES & VARIABLES === */
+        :root {
+            
+    --color-text-light: #F0F0F0;
+
+            --color-dark-bg: #0A0A0A;
+            --color-dark-card: #1A1A1A;
+            --color-text-light: #F0F0F0;
+            --color-accent-blue: #0077FF;
+            --color-accent-orange: #FF5500;
+            --color-orange-dark: #CC4400;
+            --color-orange-light: #FF7733;
+            --color-glow: rgba(255, 85, 0, 0.4);
+            --color-border: #333333;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --border-radius-main: 12px;
+        }
+
+        /* Light Mode Variables */
+        [data-theme="light"] {
+            --color-dark-bg: #F5F5F7;
+            --color-dark-card: #FFFFFF;
+            --color-text-light: #333333;
+            --color-accent-blue: #0077FF;
+            --color-accent-orange: #FF5500;
+            --color-orange-dark: #CC4400;
+            --color-orange-light: #FF7733;
+            --color-glow: rgba(255, 85, 0, 0.2);
+            --color-border: #DDDDDD;
+        }
+ 
+ 
+ 
+ 
+ #about {
+            background-color: #0F0A07;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+        
+        [data-theme="light"] #about {
+            background-color: #F9F5F3;
+        }
+        
+        #about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M40,40 L160,40 L160,160 L40,160 Z" fill="none" stroke="%23FF5500" stroke-width="1" opacity="0.05"/></svg>'),
+                linear-gradient(to bottom, rgba(15,10,7,0.95), rgba(26,15,10,0.95));
+            z-index: -1;
+            transition: background-image 0.3s;
+        }
+
+        [data-theme="light"] #about::before {
+            background-image: 
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M40,40 L160,40 L160,160 L40,160 Z" fill="none" stroke="%23FF5500" stroke-width="1" opacity="0.03"/></svg>'),
+                linear-gradient(to bottom, rgba(249,245,243,0.95), rgba(240,235,230,0.95));
+        }
+
+        #about h2 {
+            font-size: 3em;
+            color: var(--color-accent-orange);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .technology-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: var(--color-dark-card);
+            border-radius: var(--border-radius-main);
+            border: 1px solid var(--color-border);
+            position: relative;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .tech-item {
+            text-align: center;
+            padding: 20px;
+            flex-basis: 20%;
+        }
+
+        .tech-item i {
+             font-size: 2.5em;
+            color: var(--color-accent-orange);
+            margin-bottom: 10px;
+        }
+        #about,
+#about p,
+#about h3,
+#about h4,
+#about .feature-card,
+#about .tech-item {
+    color: var(--color-text-light);
+}
+#about {
+    background-color: #0F0A07;
+    color: var(--color-text-light);
+    position: relative;
+    min-height: 100vh;
+}
