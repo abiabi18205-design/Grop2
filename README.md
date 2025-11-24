@@ -1,30 +1,9 @@
 ## FITGUIDE - Your quick, smart fitness helper.
 
 ## Project Overview
-
-The AI Fitness Coach is a modern, interactive web application designed to help users achieve their fitness goals through personalized guidance. It combines intelligent features with an engaging user interface to provide a comprehensive fitness experience.
-
-Key aspects include:
-
-• Personalized Guidance: Users can interact with an AI chatbot to get advice on workouts, nutrition, and fitness tracking.
-
-• Form Analysis Simulation: A camera scanner simulates real-time analysis of exercise form, offering feedback and recommendations.
-
-• User-Friendly Interface: Fully responsive design with intuitive navigation, animations, and mobile-friendly menus.
-
-• Theme Customization: Light and dark mode with persistent preference stored in local storage.
-
-• Interactive Features: Progress bars, toast notifications, and animated elements enhance engagement.
-
-This project demonstrates practical usage of HTML, CSS, JavaScript, and Bootstrap to create a dynamic web application that combines user interaction, AI-simulated responses, and responsive design.
-
-
-# AI Fitness Coach
-
-## Project Overview
 The **AI Fitness Coach** is an interactive web application designed to help users achieve their fitness goals through guided workouts, nutrition advice, progress tracking, and form analysis. The project integrates features like a live chatbot, camera-based exercise form scanner, dark/light theme toggle, and responsive navigation to provide a complete fitness coaching experience online.
 
----
+
 
 ## Color Palette
 
