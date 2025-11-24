@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness Coach - Unlock Your Potential</title>
+    
+<!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">     
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <!-- Gym Poster Elements -->
+    <div class="gym-poster poster-1"></div>
+    <div class="gym-poster poster-2"></div>
+    <div class="gym-poster poster-3"></div>
+    
+    <header class="header">
+        <div class="container nav-content">
+            <span class="logo">AI <span>FitGuide</span></span>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-page="home">Home</a>
+                <a href="#about" class="nav-link" data-page="about">About</a>
+                <a href="#login" class="nav-link" data-page="login">Login</a>
+                <div class="settings-dropdown">
+                    <button class="settings-btn" id="settingsBtn">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <div class="settings-content" id="settingsContent">
+                        <div class="settings-item theme-toggle">
+                            <span><i class="fas fa-moon"></i> Dark Mode</span>
+                            <label class="theme-toggle-switch">
+                                <input type="checkbox" id="themeToggle">
+                                <span class="theme-toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="settings-item">
+                            <i class="fas fa-user"></i> Account Settings
+                        </div>
+                        <div class="settings-item">
+                            <i class="fas fa-bell"></i> Notifications
+                        </div>
+                        <div class="settings-item">
+                            <i class="fas fa-shield-alt"></i> Privacy & Security
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="mainContent">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="container">
+                <h1>UNLOCK YOUR POTENTIAL</h1>
+                <p>Personalized AI-Powered Workouts & Guidance</p>
+                <a href="#" class="btn-primary" id="startJourneyBtn">START YOUR JOURNEY</a>
+                
+                <div class="fitness-image">
+                    <i class="fas fa-dumbbell" style="font-size: 3em; margin-right: 15px;"></i>
+                    AI-POWERED FITNESS COACHING
+                </div>
+                
+                <!-- Camera Scanner Section -->
+                <div class="scanner-section">
+                    <h2 style="color: var(--color-accent-orange); margin-bottom: 20px;">FORM ANALYSIS SCANNER</h2>
+                    <p style="margin-bottom: 30px; color: var(--color-text-light); opacity: 0.8;">
+                        Use our AI camera scanner to analyze your exercise form and get real-time feedback
+                    </p>
+                    
+                    <div class="scanner-container">
+                        <div class="scanner-video" id="scannerVideo">
+                            <i class="fas fa-camera" style="font-size: 3em;"></i>
+                        </div>
+                        <div class="scanner-overlay" id="scannerOverlay">
+                            <div style="text-align: center;">
+                                <i class="fas fa-video" style="font-size: 2em; margin-bottom: 10px; color: var(--color-accent-orange);"></i>
+                                <p>Camera access required for form analysis</p>
+                                <button class="btn-primary" id="startScannerBtn" style="margin-top: 15px;">
+                                    START SCANNER
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="scanner-controls">
+                        <button class="btn-secondary" id="pauseScannerBtn" style="display: none;">
+                            <i class="fas fa-pause"></i> PAUSE
+                        </button>
+                        <button class="btn-secondary" id="resetScannerBtn">
+                            <i class="fas fa-redo"></i> RESET
+                        </button>
+                    </div>
+                    
+                    <div class="scanner-results" id="scannerResults">
+                        <h3 style="color: var(--color-accent-orange); margin-bottom: 15px;">Form Analysis Results</h3>
+                        <div id="analysisResults">
+                            <!-- Results will be populated here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-brain feature-icon"></i>
+                        <h3>Intelligent Adaptation</h3>
+                        <p>Real-time adjustment of routines based on your performance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-video feature-icon"></i>
+                        <h3>Form Correction</h3>
+                        <p>Computer Vision ensures you maintain perfect form to prevent injury.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-trophy feature-icon"></i>
+                        <h3>Goal Achievement</h3>
+                        <p>Structured, measurable plans guaranteed to reach your fitness targets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+           <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle pulse-animation" id="chatbotToggle">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>AI Fitness Coach</h3>
+                <button id="closeChatbot" style="background: none; border: none; color: white; cursor: pointer;">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    Hello! I'm your AI Fitness Coach. How can I help you with your fitness journey today?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Ask me anything about fitness...">
+                <button id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 AI Fitness Coach. All rights reserved.
+        </div>
+    </footer>
+    
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
